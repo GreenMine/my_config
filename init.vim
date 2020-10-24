@@ -19,12 +19,19 @@ call plug#begin('~/.vim/plugged')
  Plug 'tpope/vim-fugitive'
  Plug 'tpope/vim-sensible'
  Plug 'vim-syntastic/syntastic'
+ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 call plug#end()
 
  set nocompatible
  set history=500
  syntax on
  filetype plugin indent on
+
+ noremap j h
+ noremap k j
+ noremap i k
+
+ noremap f i
 
 " AUTO COMMENT
 
@@ -122,6 +129,8 @@ let g:VimTodoListsDoneItem = '- [✔]'
 	let g:syntastic_check_on_wq = 0
 	let g:syntastic_error_symbol = "✗"
 	let g:syntastic_warning_symbol = "⚠"
+
+	let g:ycm_global_ycm_extra_conf = "~/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 
 " Tagbar
 	 let g:tagbar_ctags_bin = "~/.local/bin/ctags-5.8/ctags"
