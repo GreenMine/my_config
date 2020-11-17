@@ -1,0 +1,1 @@
+/home/xladomaz/.config/nvim/init.vim
