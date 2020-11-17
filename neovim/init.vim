@@ -20,6 +20,7 @@ call plug#begin('~/.vim/plugged')
  Plug 'tpope/vim-sensible'
  Plug 'vim-syntastic/syntastic'
  Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+ Plug 'christoomey/vim-system-copy'
 call plug#end()
 
  set nocompatible

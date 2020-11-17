@@ -48,9 +48,9 @@ bindkey "^[O1;5S" layout next
 bindkey "^[OQ" eval "command -c rsz" # enter resize mode
 
 # use hjkl keys to resize regions
-bind -c rsz h eval "resize -h -5" "command -c rsz"
-bind -c rsz j eval "resize -v -5" "command -c rsz"
-bind -c rsz k eval "resize -v +5" "command -c rsz"
+bind -c rsz j eval "resize -h -5" "command -c rsz"
+bind -c rsz k eval "resize -v -5" "command -c rsz"
+bind -c rsz i eval "resize -v +5" "command -c rsz"
 bind -c rsz l eval "resize -h +5" "command -c rsz"
 
 # quickly switch between regions using tab and arrows
