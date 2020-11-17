@@ -1,1 +1,7 @@
-/home/xladomaz/.vifm/vifmrc
+colorscheme zenburn
+
+noremap j h
+noremap k j
+noremap i k
+
+noremap f i
